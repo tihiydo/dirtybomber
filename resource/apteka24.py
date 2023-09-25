@@ -10,7 +10,7 @@ class Apteka24:
         self.setRequestType('POST')
         self.setRequestCookie()
         self.setRequestData('')
-        self.setRequestJson( {"phone":"380995338068"} )
+        self.setRequestJson( {"phone": number[1:]} )
 
     def setResourceName(self, resourceName):
         self.resourceName = resourceName
